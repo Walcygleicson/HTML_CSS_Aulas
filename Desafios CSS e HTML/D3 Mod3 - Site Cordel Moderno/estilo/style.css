@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+footer > p > span > img {
+    position: absolute;
+    top: 171.4%;
+    height: 30px;
+    width: 30px;
+}

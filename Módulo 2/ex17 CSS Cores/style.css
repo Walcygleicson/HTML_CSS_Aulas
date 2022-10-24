@@ -1,0 +1,34 @@
+@charset "UTF-8"; /* Regra para não ter problemas com caracteres e acentos*/
+
+/* Configurações Globais*/
+* { 
+    font-family: Arial, Helvetica, sans-serif; /* fonte de todos os textos do da página*/
+}
+
+body {
+    background-image: linear-gradient(to right, #D6D58E, #DBF227, #9FC131);
+}
+
+main {
+    background-color: white;
+    border-radius: 13px; /*Arredondar bordas da folha*/
+    box-shadow:6px 6px 10px rgba(66, 65, 65, 0.397); /*Sombrear. Exitem 4 parametros. 1 é quanto essa sombra irá se mover para os lado, 2 Quanto a sombra irá para baixo, 3 Espalhamento da sombra e 4 é a cor*/
+    width:690px;
+    padding: 15px; /* Borda da folha mais afastada das lestras*/
+    margin: auto; /* Centraliza a folha. O "auto" mantem a folha no centro mesmo se a janela fo diminuída ou aumentada*/
+}
+
+h1 {
+    font-size: 42px;
+    color: #005C53;
+    text-align: center;
+    text-shadow: 1.4px 1.4px 0px #019267a4;
+}
+
+h2 {
+    color: #9FC131;
+}
+
+p {
+    text-align: justify; /*Todos os parágrafos justificdos*/
+}

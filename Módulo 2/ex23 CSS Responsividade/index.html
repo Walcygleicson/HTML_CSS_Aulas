@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+
+    <link rel="stylesheet" href="../ex22 CSS Modelo De Caixas/style.css">
+</head>
+<body>
+    <header>
+        <h1>Responsividade Para Sites</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2 class="h2alt"> Como Funciona</h2>
+            <h3>Tratando o Conteúdo</h3>
+                <p>Dentro do <i>main</i> , apos colocarmos o <i>margin:auto;</i> para que todo o conteúdo sempre fique centralixado, podemos definir a largura mínima da tela usando <i>min-widith</i> e a larura máxima com o <i>max-widith</i></p>
+                <p>Assim, todo o <i>main</i> terá uma largura max de 1000px e caso a tela for comprimida, todo o conteúdo de texto irá se adpatar ao tamanho de tela, menos a imagem</p>
+            <h3>Tratando a Imagem 1</h3>
+                <p>Se definirmos o tamanho da imagem para 100% já resolve o problema da responsividade. Assim a imagem sempre ocupará 100% da tela. Se a tela for comprimida, a imagem também irá se comprimir para cabe inteira.</p>
+                <p>Podemos também fazer de outra forma. Vamos ver no exemplo 2</p>
+
+            <h4>Exemplo 1</h4>
+                <img src="html.png" alt="Banner Logo Html5" id="ex1">
+
+            <h3>Tratando a Imagem 2</h3>
+                <p>Primeiro vamos abrir uma tag <i>picture</i> e dentro dela vamos colocar a <i>img</i>. e vamos colocar um <i>source:media</i> que virá escrita desta forma <i>source media="(min-width: )" srcset=""</i></p>
+                <p>Vamos trabalhar com max-width, então devemos apagar e sobreescrever o argumento do param media. No <i>srcset</i> vamos colocar o caminho da segunda imagem de tamanho pequeno (imagem editada e cortada)</p>
+                <p>Assim enquanto a tela for maior que o max-width seleciondo, a imagem exibida será a de maior tamanho. Quando a tela for menor que o max-width selecionado, a imagem exibida passará a ser uma segunda imagem de tamanho menor que foi editada e cortada</p>
+            <h4>Exemplo 2</h4>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="css_min.png">
+                <img src="css.png" alt="Banner Logo CSS" id="ex2">
+            </picture>
+
+            <h3>Tratando Vídeo</h3>
+                <p>Agora iremos tratar da responsividade em vídeos de links extermos. Tratar links extremos é mais comlicado, pois o <i>iframe</i> já vem com a configuração padrao de largura e altura, então iremos usar um <span class="destak">macete</span>. Para isto vamos envelopar o iframe dentro de uma <i>div</i></p>
+                <p>Agora vamos às configurações em CSS. Criaremos um para o <i>div.video</i> e o outro para o <i>iframe</i> Na div do vídeo vamos colocar um <i>position:relative;</i> e no iframe um <i>position:absolute;</i>. Feito isto, o background e o vídeo vão bugar, então, na div vamos colocar um <i>padding-bottom</i> de 40%. No iframe, como o posicionamento está em absolute, podemos configurar o <i>top</i> e <i>left</i> com 5% e tambem vamos configurar a altura e largura com 90%, assim o vídeo será esticado</p>
+                <p>A margem lateral escura do vídeo pode ser diminuida no <i>padding-bottom</i> aumetando ou diminuindo o valor em %. Porém confrome a tela for comprimida a barra voltará a aparecer</p>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+        </article>
+    </main>
+    
+</body>
+</html>

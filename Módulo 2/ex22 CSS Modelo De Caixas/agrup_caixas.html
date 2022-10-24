@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>GROUPING TAGS</h1>
+
+        <nav>
+            <a href="@">CONTATO</a>
+            <a href="@">CATEGORIAS</a>
+            <a href="@">MENU</a>
+            <a href="page2.html">CONFIGURAÇÕES</a>
+            <a href="@">FAQ</a>
+        </nav>
+    </header>
+
+    <!--Assunto Principal-->
+    <main>
+        <section id="intro">
+            <h2>O Que É?</h2>
+            <p>Os dois tipos de caixas mais usadas são as <i>divs</i> (box-level) e as <i>span</i> (inline-level). O grouping tags consiste em um agrupamento de caixas dentro de caixas</p>
+        </section>
+
+        <section id="assunto">
+            <h3>Construindo Este Site</h3>
+            <p>Usaremos caixas semanticas para esta construção. Usaremos a tag <i>header</i> para o cabeçalho do site, a tag <i>main</i> para o conteúdo principal do site e a tag <i>footer</i> para o rodapé. Essas tres tags também são consideradas divs e são box-level.</p>
+        </section>
+
+        <section id="conteudo">
+            <ul>
+                <li class="titli">Tags de Contrução Semantica</li>
+                <ul>
+                    <li>O título deste site ficará na tag de cabeçalho, e é nela que podemos colocar menus de navegação com a tag <i>nav</i>.</li>
+                    <li>Todo o conteúdo principl ficará dentro do <i>main</i> e dentro dela podemos dividir todo o conteúdo em seções com a tag <i>section</i>. Separeremos os assuntos deste site em seções. O h2 e seu assunto, assim como o h3 e as ul e seus assuntos ficarão separadas por seções e cada seção será indentificda por uma id <span class="destak">intro</span>, <span class="destak">assunto </span>e <span class="destak">conteudo</span>.</li>
+                    <li>Dentro de cada section podemos ter tambem os artigos usando a tag <i>article</i>. Simularemos um artigos abaixo para aplicar a tag. No artigos podemos ter um título de um texto.</li>
+                    <li>Dentro de um artigo podemos adicionar uma tag chamada <i>aside</i> que se trata de um conteúdo periférico ao artigo, como por exemplo, uma sitação de quem escrevou tal artigo. Vamos ao exemplo neste h4 Exemplo de Artigo</li>
+                </ul>
+            </ul>
+
+            <article>
+                <h4 class="artig">Exemplo de Notícia (Artigo)</h4>
+                <p>Este é um exemplo de assunto da notícia. Abaixo deste texto está o <i>aside</i>, e dentro dele ficará, por exemplo, o nome do autor do artigo ou notícia</p>
+                <aside>
+                    <p>Artigo escrito por Walcygleicson M. Oliveira</p>
+                </aside>
+            </article>
+
+            <article>
+                <h4 class="artig"> Exemplo de Notícia (Lorem)</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi labore, eos molestiae rerum in iure! Quidem in eaque provident ab alias at, similique fuga <i>dolor hic</i> dolores itaque natus perferendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae laudantium impedit nesciunt ea quo, enim est porro et ex rem accusantium nihil illum sint, excepturi quasi aperiam! Ab, non incidunt.</p>
+                <aside>
+                    <p>Artigo escrito por José Ferreira Martins</p>
+                </aside>
+            </article>
+
+            <article>
+                <h4 class="artig"> Fasendo Círculo Usando <i>Div</i></h4>
+                <p>Fora deste <i>article</i> vamos criar uma <i>div</i> e nas CSS usaremos o <i>border-radius</i> para deixar os cantos arredondados o suficiente. Podemos usar o parametro com porcentagem. Desta froma: <br><i>border-radiu:50%;</i></p>
+                <aside>
+                    <p>Artigo escrito por Walcygleicson M. Oliveira</p>
+                </aside>
+                <p id="divcirc"><div id="bola"></div>Este ponto é uma <i>div</i></p> 
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site por Cusro HTML5 e CSS3</p>
+    </footer>
+
+</body>
+</html>

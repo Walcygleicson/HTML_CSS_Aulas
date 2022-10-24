@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(199, 219, 213);
+}
+
+h1 {
+    color: brown;
+    background-color: chocolate;
+}
+
+h2 {
+    color: blueviolet;
+}
+
+p {
+    color: blue;
+}
+
+#principal {
+    color: beige;
+    background-color: black;
+    text-align: center;
+}
+
+.tema {
+    color: rgb(252, 244, 132);
+    background-color: darkolivegreen;
+}
+.comousar {
+    color: white;
+    background-color: darkslategrey;
+
+}
+
+.italico {
+    font-style: italic;
+}

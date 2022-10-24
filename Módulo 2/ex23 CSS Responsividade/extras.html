@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+    <link rel="stylesheet" href="../ex22 CSS Modelo De Caixas/style.css">
+</head>
+<body>
+    <header>
+        <h1>CONFIG EXTRAS PARA SITE</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">NOTICIAS</a>
+            <a href="#">CATEGORIAS</a>
+            <a href="#">CONTATO</a>
+        </nav>
+      
+    </header>
+
+    <main>
+        <h2 class="titli">Barra de Acessos</h2>
+        <h3>Usando o Transition Duration</h3>
+        <p>Para criarmos a barra de acessoas dentro do <i>header</i> usaremos a tag própria para isto <i>nav</i> e dentro dela colocaremos os links</p>
+        <p>Apos toda a configuarção padrão, na CSS em <i>nav a:hover</i> usaremos o <i>transition-duration</i> que irá dar um efeito de transição lenta toda vez que o mause estiver sobre o link, bastando configurar o tempo de duração</p>
+
+        <h2 class="titli">Colunas</h2>
+        <h3>Listas em Colunas</h3>
+        <p>Para dividirmos uma lista em duas ou mais colunas basta usar o <i>colums</i> e definir a quantidade de colunas</p>
+        <h3>Trocando Ícones da Lista</h3>
+        <p>Vamos trocar os icones das listas usando o <i>list-style-type</i> nas CSS. Podemos usar um código exadecimal de emojis.Usaremos o emoji de check</p>
+        <p>O código do emoji de chek é <i>\2714</i> entres aspas</p>
+        <p>Note que o simbolo está muito colado ao texto. Podemos colocar um espaço entre eles usando mais um código. Logo apos o codigo no incone escrevemos <i>\00A0</i> que é um códigi de espaço sem quebra de linha. Colocaremos o mesmo código duas vezes para dar um espaço maior. No final ficará assim: <i>list-style-type: '<bbr title="Código do Emoji">\2714</bbr><bbr title="Codigo do Espaço">\00A0</bbr><bbr title="Código do Espaço">\00A0</bbr>';</i></p>
+        <p>Segue o exemplo:</p>
+
+        <ul class="colunas">
+            <li>Darion Lupin: e o Livro do Necromante</li>
+            <li>Darion Lupin e o Mercante da Morte:</li>
+            <li>Darion Lupin: e o Levante das Testemunhas</li>
+            <li>Darion Lupin: e a Queda do Cerafin</li>
+            <li>Darion Lupin: e o Filho do Fogo</li>
+            <li>Darion Lupin: e o Levante das Testemunhas</li>
+            <li>Darion Lupin: e as Duas Almas</li>
+            <li>Darion Lupin: e o Reino do inferno na Terra</li>
+        </ul>
+        <p>Obs: as colunas devem ser configuradas no seletor <i>ul</i> e não no seletor <i>li</i></p>
+
+        <h2 class="titli">Links</h2>
+        <h3>Colocando Icones em Links</h3>
+        <p>Podemos colocar um incone de corrente após o o link usando a pseudoclass <i>::after</i> e dentro dela, em <i>content:;</i> colocar o código de um emoji de link. O código do emoji é <i>1f517</i></p>
+        <p>Este parágrfao é um <a href="#" class="linkemoji">Exemplo de Link</a></p>
+        
+    </main>
+
+    
+
+    
+</body>
+</html>

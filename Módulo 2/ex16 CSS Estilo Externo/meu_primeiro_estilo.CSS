@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+h1 {
+    color: brown;
+    background-color: bisque;
+}
+
+button {
+    background-color: rgb(122, 197, 231);
+    color: black;
+    font-size:20px;
+}
+
+hr {
+    color: aliceblue;
+}

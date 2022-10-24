@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio e Vídeo</title>
+</head>
+<body>
+    <h1>Adicionando Audio ao Site</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5 usando a tag "audio". No parametro "src=" adicione o caminho do audio desejado</p>
+    <p>Note que só com isso o audio ainda não reproduz, isso porque precisamos de mais um paraemtro, o "controls". O parametro controls adiciona uma caixa de controle de audio completo, com barra de progresso, botão de play e pause, forward e backward, minutagem, mute e configurações</p>
+    <audio src="audio/Opening de Arcane 2021_ League of Legends(MP3_320K).mp3" controls></audio>
+
+    <h2>Outra forma de adiconar audio</h2>
+    <p>Crie uma tag audio e exclua o src. Dentro da tag aduio iremos adicionar os sources. Escolha o source: src. Para audios mp3, o type será um audio/mpeg</p>
+    <p>Na tag audio vamos colocar um parametro de preload e como argumento vamos escolher metadata.</p>
+    <ul>
+        <li>Auto: Ele carrega o audio completamente junto com o carrrregamento do site(não recomendado)</li>
+        <li>Metadata: Carrega apenas algumas informações do audio. O audio so é carregado quando dado play</li>
+        <li>None: Não carrega nada inicialmente e tudo só é carregado quando dado play</li>
+    </ul>
+    <audio preload="metadata" controls>
+        <source src="audio/Opening de Arcane 2021_ League of Legends(MP3_320K).mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Adicionando Vídeo ao Site</h1>
+    <h2>Vídeos com Hospedagem Local</h2>
+    <p>Este vídeos está hospedado no meu proprio servidor</p>
+    <p>Da mesma forma que foi feito para inserir audio, adicionaremos um videos usando a tag "video" e colocaremos o parametro "controls". <br> Vamos modificar o tamanho do quadro com o parametro "widith"</p>
+    <video src="video/MeuvideoWeb.WebM" controls width="500"></video>
+    <p>A forma acima é a forma mais simples de se adicionar vídeo</p>
+    <h2>Outra forma de vídeo</h2>
+    <p>Usaremos o mesmo processo que usamos ao adicionar audio na segunda forma</p>
+    <video controls preload="metadata" width="500">
+        <source src="video/MeuvideoWeb.WebM" type="video/WebM">
+    </video>
+    <p>Agora vamos colocar uma thumbnail neste vídeo com o parametro "poster"</p>
+    <p>E iremos tambem colocar varioações de formatos de vídeos. Caso o navegador não for compatível com nenhum dos formatos de vídeo, mostraremos uma mensagem</p>
+    <video controls width="500" poster="video/tumb/tumb.png" loop>
+        <source src="video/MeuvideoWeb.WebM" type="video/WebM">
+        <source src="video/meuvideo.mp4.mp4" type="video/mp4">
+        <p>Seu navegador não pode reproduzir este vídeo</p>
+    </video>
+
+    <h1>Vídeos em Hospedagem Externa</h1>
+    <h2>Iserindo vídeo do Youtube</h2>
+    <p>Escolha qualquer vídeo do Youtube, clique em compartilhar, escolha a opção Encorporar, copie o código html e cole aqui</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_Kq5APl1dlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

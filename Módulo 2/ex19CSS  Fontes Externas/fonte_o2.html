@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Internas</title>
+
+    <style>
+        @font-face {
+            font-family: "academy";
+            src: url("Academy") format("truetype");
+            font-weight: normal;
+        }
+        body {
+            font-size: 23px;
+            font-weight: normal;
+        }
+
+        h1{
+            font-family: "academy", Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como Colocar Fontes Baixadas</h1>
+    <h2>Tipos de Formats</h2>
+    <p>
+        <ul>
+            <li>opentypes - otp</li>
+            <li>truetype - ttp</li>
+            <li>embedded-opentype</li>
+        </ul>
+    </p>
+
+    <p>Para adicionar uma fonte baixada, dentro do <i>Style</i> escreva a regra <i>@font-face {font-family:'nome da fonte de sua escolha'; src: url('nome do arquivo da fonte') format('nome do typo do formato da fonte')</i></p>
+    <p style="font-size: 21px; color: crimson;"><i>Consultar código</i></p>
+
+    <h1>Exemplo de Texto 02</h1>
+    <h2>Texto</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quas sequi dolorem beatae est explicabo cumque rem quaerat. Minima nesciunt placeat reiciendis architecto temporibus iure ab, deleniti praesentium reprehenderit odio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas aliquid ab maiores soluta! Libero ea nobis recusandae itaque eius, consequatur facere impedit quidem harum ullam aut! Consequuntur dolor rerum placeat!</p>
+</body>
+</html>

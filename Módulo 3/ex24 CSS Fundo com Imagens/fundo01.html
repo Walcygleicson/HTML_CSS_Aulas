@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens de Fundo</title>
+    <style>
+        body {
+            margin: 1em;
+        }
+
+        section {
+            background-color: beige;
+            border: 1px solid rgb(187, 186, 186);
+            border-radius: 0px 10px 10px 10px;
+            box-shadow: 5px 5px 5px rgba(219, 217, 217, 0.5);
+            margin-left: 2em;
+            margin-right: 2em;
+            padding: 1em 1em;
+
+        }
+
+        i {
+            color: rgb(172, 82, 18);
+        }
+
+        h1 {
+            color: rgb(253, 253, 253);
+            display: inline-block;
+            background-color: chocolate;
+            border: 1px solid transparent;
+            border-radius: 10px 10px 10px 0px;
+            padding: 5px;
+            
+        }
+
+        div.quadrado{
+            display: inline-block;
+            background-color: aquamarine;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+
+        div.bloco {
+            background-image: url(imagens/wallpaper002.jpg);
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 200px;
+        }
+
+        div#q1 {
+            background-color: blueviolet;
+
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, orange)
+
+        }
+
+        div#q3 {
+            background-image: url("imagens/pattern003.png");
+
+        }
+
+        div#b1{
+            background-position: left top;
+        }
+
+        div#b2 {
+            background-position: left center;
+        }
+
+        div#b3 {
+            background-position: right bottom;
+        }
+
+        div#b4 {
+            background-position: center center;
+        }
+    </style>
+
+</head>
+<bod>
+    <h1>Métodos de Configurar o Fundo</h1>
+    <section>
+        <h2>Cor Sólida</h2>
+            <p>Usando apenas o <i>background-color</i></p>
+            <div class="quadrado" id="q1"></div>
+        <h2>Gradient</h2>
+            <p>Usando o <i>backgrond-image: linear-gradient</i></p>
+            <div class="quadrado" id="q2"></div>
+        <h2>Usando Imagens</h2>
+            <p>Usando o <i>backgrond-image: url()</i></p>
+            <div class="quadrado" id="q3"></div>
+    </section>
+
+    <br>
+    <h1>Posição dos Fundos</h1>
+    <br>
+
+    <section>
+        <p>Usando o <i>backgound-position: left top</i></p>
+        <div class="bloco" id="b1"></div>
+        <p>Usando o <i>backgound-position: left center</i></p>
+        <div class="bloco" id="b2"></div>
+        <p>Usando o <i>backgound-position: right bottom</i></p>
+        <div class="bloco"id="b3"></div>
+        <p>Usando o <i>backgound-position: center center</i></p>
+        <div class="bloco" id="b4"></div>
+    </section>
+
+</body>
+</html>

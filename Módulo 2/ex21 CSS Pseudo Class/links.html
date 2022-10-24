@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elementos</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        i {
+            font-weight: bold;
+        }
+
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(173, 20, 20);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: chartreuse;
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+    
+        a.test::after {
+            content: ' [link]';
+            color: darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <p>Para marcar um texto link quando ele for visitado usaremos o metodo da class:<i>visited</i>. Vamos configurar que quando um link for visitado, a cor ficará amarelo</p>
+    <p>Vamos Tambem retirar os sublinhados usando o <i>text-decoration:none;</i></p>
+    <p>E vamos fazer tambem com que a linha reapareça quando o mause passar por cima usando o <i>hover {text-decoration:underline;}</i></p>
+    <p>Vamos fazer tambem com que a cor mude assim que o link for clicado ou ativado com o <i>:active</i></p>
+
+    <ul>
+        <li><a href="https://www.netflix.com/browse">Netflix</a></li>
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.intelbras.com">Intelbras</a></li>
+    </ul>
+
+    <h1>Pseudo Elementos</h1>
+    <h2>O Que É?</h2>
+    <p>Pseudo elementos mexem no contúdo do elemento.</p>
+    <h2>Como Usar</h2>
+    <p>Os Pseudo Elementos são identificados por <i>::</i> (duplo dois pontos)</p>
+    <p>Um exemplo, vamos colocar um indicador no final de cada link indicando que o conteúdo se trata de um link, para isso usaremos o metodo <i>after</i> e dento dele usaremos o <i>content:"texto";</i></p>
+
+    <ul>
+        <li><a href="https://facebook.com" class="test"> Facebook </a></li>
+        <li><a href="https://www.youtube.com/" class="test">Youtube </a></li>
+        <li><a href="https://www.facebook.com/" class="test">Silá </a></li>
+        <li><a href="https://www.intelbras.com" class="test">Intelbras </a></li>
+    </ul>
+</body>
+</html>

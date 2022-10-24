@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Adaptando imagem a multiplos dospositivos usando a tag 'picture'</h1>
+    <p>Dentro da tah picture colocamos a imagem com a tag img e usaremo a tag sourse: midia:type. No média, estará o argumento "min-wudth", mude para max e coloque 1000 mil px. Em srcset, coloque o caminho da imagem média. No type colo o formato da imagem ao final de image/. isto está dizendo que se a tela for menor que 1000px, ele carregará a imagem média</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Grande">
+    </picture>
+</body>
+</html>

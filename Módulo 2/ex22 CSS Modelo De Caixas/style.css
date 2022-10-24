@@ -1,0 +1,267 @@
+body {
+    font-size: 20px;
+    background-color: rgb(238, 238, 232);
+    text-align: justify;
+    padding-left: 0.50cm;
+    padding-right: 0.50cm;
+}
+
+p {
+   margin: 8px 0px 8px 0px;
+}
+
+h1 {
+    background-color: rgb(48, 102, 173);
+    color: aliceblue;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color:rgb(48, 102, 173);
+}
+
+i {
+    font-weight: bold;
+    color: rgb(207, 88, 33);
+}
+
+li {
+    padding-top: 10px;
+}
+
+ul {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.ex {
+    width: auto;
+    height: auto;
+    background-color: rgb(43, 33, 33);
+    color: beige;
+    /*Bordas*/
+    border-width:5px;
+    border-style: solid;
+    border-color: blue;
+    /*Preenchimento entre o texto e a borda*/
+    padding: 10px 8px 10px 8px;
+    outline-width:6px;
+    outline-color: chartreuse;
+    outline-style: dashed;
+    margin: 10px;
+}
+
+h3.ex {
+    margin: auto;
+}
+
+p {
+    text-indent: 0.50cm;
+}
+
+.titli {
+    display: inline-block;
+    background-color: rgb(6, 77, 77);
+    color: aliceblue;
+    padding:0px 6px 0px 6px;
+    border-width: 3px;
+    border-radius: 0px 11px 11px 11px ;
+    border-color: rgb(6, 77, 77);
+    border-style: solid;
+    }
+
+.destak {
+    color: rgb(160, 175, 23);
+}
+
+.artig {
+    display: inline-block;
+    background-color: rgb(54, 49, 48);
+    color: aliceblue;
+    
+    padding:0px 2px 0px 2px;
+    border-width: 3px;
+    border-radius: 4px;
+    border-color: rgb(54, 49, 48);
+    border-style: solid;
+}
+
+header {
+    background-color: rgb(219, 218, 228);
+    border-style: solid;
+    border-color: rgb(219, 218, 228);
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgb(141, 138, 138);
+}
+
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    background-color: rgb(243, 242, 248);
+    border-style: solid;
+    border-color: rgb(243, 242, 248);
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgb(141, 138, 138);
+    padding: 0px 15px 15px 15px;
+    margin: 3px auto;
+}
+
+section#intro {
+    border:1px solid black;
+    padding: 0cm 1cm;
+    border-radius: 4px;
+    margin: 10px 0px;
+}
+
+section#assunto {
+    border:1px solid black;
+    padding: 0cm 1cm;
+    border-radius: 4px;
+    margin: 10px 0px;
+}
+
+section#conteudo {
+    border:1px solid black;
+    padding: 0cm 1cm;
+    border-radius: 4px;
+    margin: 10px 0px;
+}
+article {
+    background-color: rgb(230, 230, 215);
+    border:1px solid black;
+    padding: 0cm 1cm;
+    border-radius: 0px 11px 11px 11px;
+    margin: 10px 0px;
+    box-shadow: 3px 3px 10px rgb(141, 138, 138);
+}
+
+aside {
+    width: 260px auto;
+    font-size: 12px;
+    font-style: italic;
+    border:1px solid black;
+    border-radius: 0px 11px 11px 11px;
+    margin: 10px 0px;
+}
+
+footer {
+    background-color: rgb(71, 17, 17);
+    height: 17px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border: 5px solid rgb(71, 17, 17);
+    border-radius: 4px;
+    margin: 1cm 1cm;
+    padding-bottom: 13px;
+    box-shadow: 3px 3px 10px rgb(141, 138, 138);
+}
+
+nav {
+    background-color: rgb(209, 208, 214);
+    box-shadow: 3px 3px 10px rgb(141, 138, 138);
+    border: 2px solid rgb(219, 218, 228);
+    border-radius: 4px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: rgb(48, 102, 173);
+    margin: 0px 68px;
+}
+
+nav >a:hover {
+    color: white;
+}
+
+div#bola {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: crimson;
+    margin: 10px 0px;
+    border: 1px solid crimson;
+    border-radius: 50%;
+}
+
+img#ex1 {
+    margin: 10px;
+    width:100%;
+    border:1px solid rgba(128, 128, 128, 0.158);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.719);
+}
+
+img#ex2 {
+    margin: 10px;
+    width:100%;
+    border:1px solid rgba(149, 132, 224, 0.158);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.719);
+}
+
+.h2alt {
+    width: 230px;
+    color: aliceblue;
+    background-color: rgb(151, 76, 5);
+    border: 1px solid rgb(197, 107, 23);
+    border-radius: 11px 11px 0px 11px;
+    padding-left: 7px;
+}
+
+nav a {
+    
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-left: 1em;
+    padding:1px 10px 2px 10px;
+}
+
+nav a:hover {
+    background-color: rgb(107, 107, 224);
+    transition-duration: 1s;
+}
+
+ul.colunas {
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+a.linkemoji {
+    
+    text-decoration: none;
+    color: rgb(41, 131, 204);
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+a.linkemoji:hover {
+    background-color: rgb(235, 182, 166);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+a.linkemoji::after {
+    content: '\00A0\00A0\1f517';
+}
+
+div.video {
+    background-color: rgb(107, 230, 158);
+    margin: 0px -38px 20px -37px;
+    padding: 20px;
+    padding-bottom: 51.9%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+
+    top: 5%;
+    left: 10%;
+
+    width: 80%;
+    height: 90%;
+}

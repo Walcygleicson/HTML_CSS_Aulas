@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização Vertical de Caixas</title>
+
+    <style>
+        p {
+            font-size: 18px;
+        }
+
+        p i {
+            color: rgb(143, 67, 13);
+        }
+
+        main {
+            margin: 2em;
+        }
+
+        section#container {
+            position: relative;
+            height: 500px;
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        article#conteudo {
+            position: absolute;
+            left:50%;
+            top: 50%;
+            height: 200px;
+            width: 400px;
+            background-color: coral;
+            transform:translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Alinhando Verticalmente a Caixa</h1>
+        <p>Na caixa de fora colocaremos um <i>position:relative;</i> e na caixa de dentro um <i>position:absolute;</i></p>
+        <p>Quando colocamos ums absolute em um elemento podemos então mexer em algumas configurações a mais como o <i>left</i> e o <i>top</i></p>
+        <p>Configuraremos essas duas posições ate a caixa estar centralizada</p>
+        <p>Feito isto, note que a centralização da caixa leva em consideração o seu ponto de origem que neste caso é no canto superior esquerdo. Vamos mudar seu ponto de origem para o maio da caixa usando o <i>transform</i> com a função <i>translate()</i></p>
+        <section id="container">
+            <article id="conteudo">
+
+            </article>
+        </section>
+
+    </main>
+    
+</body>
+</html>

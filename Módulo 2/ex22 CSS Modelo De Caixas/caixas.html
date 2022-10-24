@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>MODELOS DE CAIXAS</h1>
+    <h2>O Que É?</h2>
+    <p>Todo elemento escrito em HTML está dentro de uma caixa, que pode ser configurada nas CSS. Podemos editar esta mesma caixa, que inicialmente fica invisível, usando os estilos.</p>
+    <p>Podemos criar uma borda ao redor dest caixa usando <i>border</i></p>
+    <p>Esta borda ficará bem encostada com as letras dentro da cixa. Para darmos um espaço entre as letras e a borda usamos o <i>padding</i> que cria um preenchimento entre elas, fasendo assim que a borda se distancie do texto</p>
+    <p>Com a borda já criada, agora temos as possibilidade de adiconar um contorno nesta borda usando o <i>outline</i>. Este contorno permanece grudada na borda.</p>
+    <p>Se desejarmos criar outra borda ou caixa por fora, esta borda acabrá por ficar colada na borda interna. Então para darmos um espaço entre a borda interna e externa, usaremos o <i>margin</i> que cria uma margem entre a borda e o exterior</p>
+
+    <h3>Existem Dois Tipo de Box</h3>
+    <ul>
+        <li class="titli">Caixa do tipo BOX-LEVEL</li>
+        <ul>
+            <p>Se temos um aparagrafo e criamos um box-level, este sempre será criado abaixo do paragrafo e sempre terá a largura total da tela e o conteúdo ira pular para a proxima linha</p>
+            <li>Um exemplo de Box-Level é o <i>div</i></li>
+            <p>Criamos uma div sempre que quisermos quebrar a linha</p>
+            <h4>Outros exemplos são:</h4>
+            <ul>
+                <li>h1</li>
+                <li>p</li>
+                <li>main</li>
+                <li>video</li>
+                <li>nav</li>
+                <li>...</li>
+            </ul>
+
+           <br> 
+           
+        </ul>
+        <li class="titli">Caixa do tipo INLINE-LEVEL</li>
+        <ul>
+            <p>Se temos um paragrafo e criamos um inline level, este não irá pular para a proxima linha, será criado logo apos o final do paragrafo (se houver espaço), terá a largura exata apenas do conteúdo posto dentro dele, e apos isso o conteudo do paragrafo contininua na mesma linha logo apos a caixa.</p>
+            <li>Um exemplo de Inline-Level é o <i>span</i></li>
+            <p>Usamos um span sempre que quisermos introduzir uma caixa entre uma linha</p>
+            <h4>Outros exemplos são:</h4>
+            <ul>
+                <li>a</li>
+                <li>code</li>
+                <li>input</li>
+                <li>label</li>
+                <li>select</li>
+                <li>...</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <h1>VAMOS À PRÁTICA</h1>
+    <h2>Box-Level</h2>
+    <p>(Parágrafos também são exemplos de box-level, mas os links são exemplos de caixas Inline-Level)</p>
+    <p>Vamos configurar este h3 no style usando caixas usando <i>padding, border, outline e margin</i></p>
+    <p>Podemos centralizar esta caixa usando suas margens. Colocando as magens esquerda e direita em <i>auto</i> ela centraliza e adapta a caixa conforme o tamanho da tela</p>
+    <h3 class="ex">Exemplo de Texto Sobre Caixas Box-Line</h3>
+
+    <h2>Inline-Level</h2>
+    <p>Este paragrafo é um exemplo de inline-level. Teremos este link <a href="#" class="ex">Exemplo de Link</a> onde sua caixa ocupa um espaço na própria linha, sem a necessidade de qubras</p>
+    <p>Vamos configurar este paragrafo com mesma config do h3 acima usando sua <i>class</i></p>
+    <h4>Obs Sobre ShortHand:</h4>
+    <p>Quando os quatros valores de uma shorthand forem iguais, como por exemplo <i>"padding:10px 10px 10px 10px;"</i> podemos simplificar mais ainda informando apenas um valor. Assim o computador entende que todos os lados receberão este mesmo valor de 10px. Assim: <i>"padding:10px;"</i> também funciona</p>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        body {
+            font-size:20px;
+        }
+
+       
+        div{
+            display: inline-block;
+            background-color: darkgrey;
+            border: 2px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+    /*Quando o mause estiver passando sobre as divs, elas mudarão para a cor de background-color selecionada*/
+        div:hover {
+            background-color: chartreuse;
+        }
+        div#click:hover > p{
+            background-color: rgb(245, 10, 174);
+            display: block;
+        }
+
+        div#click > p {
+            display: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <h2>Para Que Serve?</h2>
+    <p>Pseudo Classes são identificadas com <b>:</b> (Dois Pontos) nas CSS</p>
+    <p>Pseudo Classes está relacionado ao estados das coisas, como por exeplo: Queremos que ao passar o mause sobre os quadrados eles mudem de cor.</p>
+    <h3><b>Como Usar</b></h3>
+    <p>No Style escrevemos <i>Div:</i> e escolhemos o metodo <i>Hover</i> (significa quando o mause estiver passando por cima)</p>
+
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p style="font-size:40; font-weight: bold;">É Possível Tambem Recolher Textos Dentro de Outros Textos</p>
+    <p>Vamos recolher um texto "Texto Escondido" dentro de um texto, para isto, usamos a escrevemos dentro de uma div</p>
+    <p>Para dizer que um elemnto está dentro de outro em CSS usamos ">" desta forma:</p>
+    <p><i>div#click > p {}</i></p>
+    <p>Está dizendo que o o p está dentro da div. Dentro dos colchetes escrevemos <i>display:none;</i> isto é, os paragrafos que estão dentro da div não será mostrada. Veja que o paragrafo dentro da div sumiu</p>
+    <p>Para mostrarmos o texto quando o mause for passado sobre o texto, escremos que quando o mause passar sobre o o texto que possui um tetxto filho, ele será exibido. Asim se esceve</p>
+    <p><i>div:hover > p { display:block;}</i></p>
+    <p>Veja</p>
+    <div id="click">
+        Clique Aqui
+        <p>Texto Escondido</p>
+    </div>
+    
+</body>
+</html>

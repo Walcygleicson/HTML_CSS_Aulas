@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Com Fundos de Imagens</title>
+
+    <style>
+        i {
+            color: rgb(148, 76, 24);
+        }
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        h1 {
+            display: inline-block;
+            padding:1%;
+            color: azure;
+            background-image: linear-gradient(to right, rgb(22, 101, 121), rgb(44, 161, 190));
+            text-shadow: 1px 1px rgba(36, 35, 35, 0.699);
+            border: 1px solid transparent;
+            border-radius:4px;
+        }
+
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 2em;
+            margin: auto;
+            border:1px solid transparent;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <h1>Backgroung Com Imagens</h1>
+
+        <h2>background-position</h2>
+        <p>Centralize a imagem usando o <i>background-position: center top;</i></p>
+
+        <h2>background-repeat</h2>
+        <p>Para retirar as quebras use <i>background-repeat: no-repeat;</i> </p>
+        <p>Vamos colocar o <i>background-repeat</i> em <i>repeat-y</i> para a imagem se repetir apenas no eixo y</p>
+
+        <h2>background-size (contain e cover)</h2>
+        <p>Para resolver o problema do fundo preto aparecendo vamos usar o <i>background-size</i> e dentro dele vamos usar o <i>contain</i>. O contein manda a imagem ser exibida sem alterações. Ou podemos usar o <i>cover</i> no lugar do contain. O cover recorta a imagem para caber 100% na tela.</p>
+
+        <h2>background-attachment</h2>
+        <p>Mas note que se houver um conteúdo muito grande onde haverá barra de rolagem, ao logar para baixo o fundo escuro voltará a aperecer</p>
+        <p>Vamos deixar a imagem de fundo travada para que ela não role. Usaremos o <i>background-attachment</i> no <i>fixed</i> Desta forma a imagem ficará fixa mesmo se houver rolagem para baixo ou cima</p>
+        <p>O resultado que temos aqui é uma conbinação do <i>background-size: cover;</i> com <i>background-attachment:fixed;</i></p>
+
+        <h1>Extra</h1>
+        <h2>Shorthand com Backgroung</h2>
+        <h3>Ordem</h3>
+        <ul>
+            <li>color</li>
+            <li>image</li>
+            <li>repeat</li>
+            <li>size</li>
+            <li>attachment</li>
+        </ul>
+
+    </main>
+    
+</body>
+</html>
