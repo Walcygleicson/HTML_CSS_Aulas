@@ -2,7 +2,71 @@
 
 footer > p > span > img {
     position: absolute;
-    top: 171.4%;
+    top: 157.6%;
     height: 30px;
     width: 30px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 30px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 20px;
+    
+}
+
+ a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(252, 168, 175);
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 16.4px;
+}
+section {
+    padding: 10vh 0vh 10vh 30px;
+    line-height: 1.5em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(88, 62, 44);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(27, 26, 26, 0.568);
+    padding: 10px 0px 10px 20px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 4px 0px 4px 0px;
 }
