@@ -1,10 +1,24 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'siri';
+    src: url(../fontes/Sriracha-Regular.ttf) format('truetype');
+}
+
+:root {
+    ---fonte: 'siri';
+}
+
+main {
+    font-family: var(---fonte);
+}
+
 footer > p > span > img {
-    position: absolute;
-    top: 157.6%;
-    height: 30px;
-    width: 30px;
+    margin: -0.9%;
+    padding-left: 1em;
+    height: 35px;
+    width: 35px;
+    size: 4vh;
 }
 
 * {
@@ -26,6 +40,7 @@ header {
 header > h1 {
     padding-top: 30px;
     font-variant: small-caps;
+    font-size: 5vw;
 }
 
 header > p {
@@ -46,6 +61,7 @@ a:hover {
 section {
     padding: 10vh 0vh 10vh 30px;
     line-height: 1.5em;
+    font-size: 2vw;
 }
 
 section.normal {
@@ -56,17 +72,36 @@ section.normal {
 section.imagem {
     background-color: rgb(88, 62, 44);
     color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(31, 30, 30, 0.795);
+    background-attachment: fixed;
+    
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
     background-color: rgba(27, 26, 26, 0.568);
-    padding: 10px 0px 10px 20px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
 }
+
+section#img2 {
+    background-image: url(../imagens/background_flor.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+
+
+section#img1 {
+    background-image: url(../imagens/background_papel.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
 
 footer {
     background-color: black;
     text-align: center;
     color: white;
-    padding: 4px 0px 4px 0px;
+    padding: 6px 0px;
 }
