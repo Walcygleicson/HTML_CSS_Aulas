@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+     <style>
+        body {
+            background-color: rgb(243, 243, 231);
+            margin: 2em;
+            text-align: justify;
+        }
+        h2 {
+            background-image: linear-gradient(to  right, rgb(65, 68, 46), rgb(129, 138, 81));
+            color: white;
+            padding: 5px 0px 5px 8px;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+        }
+        table.square {
+            width: 300px;
+            height: 300px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        thead {
+            background-color: rgb(96, 100, 100);
+            color: white;
+        }
+        .square td {
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        tr.linha {
+            background-color: darkslategray;
+            color: aliceblue;
+
+        }
+
+        p {
+            font-size: 18px;
+        }
+        i {
+            color: rgb(184, 91, 24);
+        }
+     </style>
+</head>
+<body>
+    <h1>Tabelas Simples</h1>
+    <h2>Como Faz?</h2>
+    <p>Criaremos uma tabela usando a tag <i>table</i></p>
+    <ul>
+        <li><h3>Hierarquia de Tabela Simples</h3></li>
+        <li>Table - Tabela
+            <ul>
+                <li>Table Row - Linhas de tabela
+            <ul>
+                <li> Table Header - Cabeçalho de tabela</li>
+                <li>Table Data - Dados de tabela</li>
+            </ul>
+        </li> 
+            </ul>
+        </li>
+        
+    </ul>
+
+    <p>Criaremos a primeira linha da tabela, que será um Table Row, usando a tag <i>tr</i>.Em seguida, como mostra a lista de hierarquia, dentro do Table Row temos um Table Data, usando a tag <i>td</i></p>
+    <p>Configurar as brodas das células do <i>style</i> com <i>border</i>. As células veem com ar bordas separadas, para unir , no Table, usaremos a função <i>border-collapse</i> com o valor <i>collapse</i></p>
+    <p>Criaremos 4 linhas neste exemplo</p>
+
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <h2>Alinhamento</h2>
+    <h3>Alinhando o Conteúdo das <i>td</i></h3>
+    <p>O alinhamento horizontal se faz com <i>text-align</i></p>
+    <p>O alinhamento vertical se faz com <i>vertical-align</i></p>
+    
+    <table class="square">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <h1>Tabelas Grandes</h1>
+    <h2>Anatomia das Tabelas Grandes</h2>
+    <ul>
+        <li><h3>Hierarquia de Tabela Grande</h3></li>
+        <li>Table - Tabela
+            <ul>
+                <li>thead - Cabeçalho da Tabela</li>
+                    <ul>
+                        <li>tr</li>
+                        <li>td</li>
+                        <li>th</li>
+                    </ul>
+
+                <li>tbody - Corpo da Tabela</li>
+                    <ul>
+                        <li>tr</li>
+                        <li>td</li>
+                        <li>th</li>
+                    </ul>
+
+                <li>tfoot - Pé da Tabela</li>
+                    <ul>
+                        <li>tr</li>
+                        <li>td</li>
+                        <li>th</li>
+                    </ul>
+            </ul>
+        </li> 
+    </ul>
+
+
+    <table>
+        <thead>
+            <th>Estado</th>
+            <th>Populução</th>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">450.919.000</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">859.097.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">874.789.567</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450.919.000</td>
+                
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">859.097.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">874.789.567</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">450.919.000</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">859.097.000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">874.789.567</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450.919.000</td>
+                
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">859.097.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">874.789.567</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total Habitantes</th>
+                <td>00000000</td>
+            </tr>
+        </tfoot>
+    </table>
+        
+</body>
+</html>
