@@ -27,7 +27,7 @@
             height: 300px;
         }
 
-        td, th {
+        table td, th {
             border: 1px solid black;
             padding: 4px;
         }
@@ -52,6 +52,49 @@
         }
         i {
             color: rgb(184, 91, 24);
+        }
+        
+        caption {
+            font-size: 17px;
+            padding: 5px;
+            background-color: rgb(141, 148, 129);
+        }
+
+        tfoot {
+            background-color: rgb(139, 139, 192);
+        }
+
+        th#pop {
+            width: 85px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: rgb(223, 198, 198);
+        }
+
+        #filmes tbody tr:nth-child(even) {
+            background-color: rgb(255, 255, 255);
+        }
+
+        table#filmes{
+            width: 400px;
+            position: relative;
+        }
+
+        #filmes thead th {
+            background-color: rgb(146, 125, 125);
+            color: white;
+           
+        }
+
+        #filmes thead > tr > th {
+            position: sticky;
+            top: -1px;
+
         }
      </style>
 </head>
@@ -144,6 +187,7 @@
         <li><h3>Hierarquia de Tabela Grande</h3></li>
         <li>Table - Tabela
             <ul>
+                <li>caption - Legenda da Tabela</li>
                 <li>thead - Cabeçalho da Tabela</li>
                     <ul>
                         <li>tr</li>
@@ -168,11 +212,14 @@
         </li> 
     </ul>
 
-
+    <h2>Trabalhando com THEAD, TBODY e TFOOT</h2>
+    <h3>Efeito Zebrasdo</h3>
+    <p>Para esse efeito iremos usar a pseudoclass <i>nth_child()</i> e nos parametros colocar a valor de pulos, desta forma <i>2n</i>. Além disto, podemos também, no lugar de 2n, usar <i>odd</i> para as linhas pares e <i>even</i> para as linhas impares</p>
     <table>
+        <caption>População dos Estados do Brasil</caption>
         <thead>
-            <th>Estado</th>
-            <th>Populução</th>
+            <th scope="col">Estado</th>
+            <th scope="col" id="pop">Populução</th>
 
         <tbody>
             <tr>
@@ -231,11 +278,247 @@
 
         <tfoot>
             <tr>
-                <th>Total Habitantes</th>
+                <th scope="row">Total Habitantes</th>
                 <td>00000000</td>
             </tr>
         </tfoot>
     </table>
+     <h3>Escopo de Tabela</h3>
+     <p>Para deizermos para o navegador que o <i>th</i> 'estados' é referente a toda a coluna abaixo dela, no seletor usamos o parametro <i>scope</i> e definimos <i>col</i> para colunas e/ou <i>row</i> para linhas.
+     </p>
+
+     <h2>Cabeçalho Fixo</h2>
+
+     <table id="filmes">
+        <caption>Listas de Filmes</caption>
+        <thead>
+            <tr>
+                <th>Filme</th>
+                <th>Diretor</th>
+                <th>Gênero</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Cisne Negro</td>
+                <td>Darren Aronovski</td>
+                <td>Drama/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>Interestellar</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Jogos Mortais</td>
+                <td>James Wan</td>
+                <td>Terror</td>
+            </tr>
+
+            <tr>
+                <td>Os Oito Odiados</td>
+                <td>Quentin Tarantino</td>
+                <td>Ação/Suspense</td>
+            </tr>
+
+            <tr>
+                <td>A Origem</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+            <tr>
+                <td>Tenet</td>
+                <td>Christopher Nolan</td>
+                <td>Fic Científica</td>
+            </tr>
+
+
+        </tbody>
+     </table>
         
 </body>
 </html>
