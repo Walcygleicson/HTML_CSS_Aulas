@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Três</title>
+
+    <style>
+
+        body {
+            margin:40vh 1vw;
+            background-color: beige;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            outline: 1px solid rgb(77, 17, 243);
+
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 2px 10px;
+            width: 160px;
+            background-color: white;
+        }
+
+        th#dir {
+            width: 150px;
+        }
+    
+        thead th {
+            text-align: center;
+            color: aliceblue;
+            background-color: rgb(88, 90, 69);
+        }
+
+        th#homen {
+            background-color: rgb(158, 188, 243);
+        }
+        th#mulher {
+            background-color: rgb(240, 180, 240);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sexo</th>
+                <th id="dir">Diretor</th>
+                <th colspan="3" id="film">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" id="homen">Homen</th>
+                <td>Christopher Nolan</td>
+                <td>Tenet</td>
+                <td>Interestelar</td>
+                <td>A Origen</td>
+            </tr>
+            <tr>
+                <td>Quentin Tarantino</td>
+                <td>Kill Bill</td>
+                <td>Django Livre</td>
+                <td>Bastardos Inglórios</td>
+            </tr>
+            <tr>
+                <td>James Wan</td>
+                <td>Jogos Mortais</td>
+                <td>Aquaman</td>
+                <td>Invocação do Mal</td>
+            </tr>
+            <tr>
+                <td>M Night Shiamalan</td>
+                <td>Fragmentado</td>
+                <td>O Sexto Sentido</td>
+                <td>A Vila</td>
+            </tr>
+            <tr>
+                <th rowspan="3" id="mulher">Mulher</th>
+                <td>Sophia Coppola</td>
+                <td>Encontros e Desencontros</td>
+                <td>Maria Antonieta</td>
+                <td>O Poderoso Chefão III</td>
+            </tr>
+            <tr>
+                <td>Patty Jenkins</td>
+                <td>Mulher-Maravilha</td>
+                <td>Rogue Squadron</td>
+                <td>Monster</td>
+            </tr>
+
+            <tr>
+                <td>Kathryn Bigelow</td>
+                <td>Guerra ao Terror</td>
+                <td>A Hora Mais Escura</td>
+                <td>Operação Fronteira</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

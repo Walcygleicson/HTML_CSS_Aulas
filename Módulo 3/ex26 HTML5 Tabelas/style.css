@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    margin: 2em;
+}
+
+table {
+     border-collapse: collapse;
+}
+
+strong {
+    color: rgb(214, 23, 23);
+}
+
+td {
+    border: 1px solid black;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+   
+}
+
+.cor {
+    background-color: rgb(211, 192, 192);
+}

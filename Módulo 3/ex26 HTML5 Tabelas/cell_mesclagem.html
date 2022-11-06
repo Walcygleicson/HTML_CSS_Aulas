@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <h2>Com Funciona?</h2>
+    <p>Temos uma tabela onde a célula C não existe, desta forma a tabela ficará quebrada. Para fazer com que a célula B ocupe todo o espaço vazio pode usar uma expanção de célula dentro da <strong>td</strong> B</p>
+    <p>Veja no Exemplo 2</p>
+
+    <h3>Exemplo 1 - Coluna Quebrada</h3>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h3>Exemplo 2 - Expanção de Coluna (<strong>colspan</strong>)</h3>
+    <p>Para fazer com que a célula ocupe duas colunas, dentro da tag <strong>td</strong> use <strong>colspan</strong> (expanção de coluna) e inisra o valor 2</p>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2" class="cor">B</td>
+
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+
+    <h3>Exemplo 3 - Expanção de Linha (<strong>rowspan</strong>)</h3>
+    <p>Da mesma forma podemos fazer com linhas. As células G e J forma escluídas, mas a célula D irá ocupar o espaço, usaremos o <strong>rowspan</strong> para 3 linhas</p>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" class="cor">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>
