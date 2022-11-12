@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFrame</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        iframe#links {
+            width: 75vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        ul, li{
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">IFRAMES</h1>
+    <h2 class="subtitulo">Como Usar</h2>
+    <p>Um <strong>iframe</strong> nada mais é do que um quadro inline onde é possível visualizar o conteúdo direto de um link. Desta forma:</p>
+    <p>Aqui temos um iframe para <iframe src="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" frameborder="2"></iframe></p>
+    <p>Alguns sites não dão permissão para que seu conteúdo seja mostrado em iframes, como no caso da netflix.</p>
+    <p>Site da Netflix <iframe src="https://www.netflix.com" frameborder="1">
+        <a href="https://www.netflix.com/browse">Netlix</a>
+    </iframe></p>
+        
+    <p>Há também o problema de alguns aparelhos celulares não serem compatíveis com iframe. Para solucionar podemos dar uma segunda condição que se caso o conteúdo não for compatível apareça o link do site. Desta forma, entre as tag, colocaremos um link</p>
+
+        <h2 class="subtitulo">Várias Páginas Num iframe</h2>
+        <p>É possível fazer com que os conteúdos de dois ou mais links compartilhem do mesmo quadro de iframe, alternando quando cada link for clicado.</p>
+        <p>Para isto, na tag iframe coloque o aparemtro <strong>name</strong> e nomeie-o. Feito isto, no link em questão crie um <strong>target</strong> e coloque o nome dado ao iframe ateriormente.</p>
+        <h3>Colocar um thumbnail</h3>
+        <p>É possivel colocar uma imagem ou conteudo como fundo usando a paraemtro <strong>src</strong> no entanto, existe também o aparm <strong>srcdoc</strong> onde dentro dele é possivel escrever codigos html.</p>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="tela">Wikipedia</a></li>
+            <li><a href="https://lelivros.love/" target="tela">Lelivros</a></li>
+            <li><a href="https://megaflix.co/" target="tela">Megaflix</a></li>
+        </ul>
+
+        <iframe src="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" frameborder="0" id="links" name="tela"></iframe>
+
+        
+
+</body>
+</html>
