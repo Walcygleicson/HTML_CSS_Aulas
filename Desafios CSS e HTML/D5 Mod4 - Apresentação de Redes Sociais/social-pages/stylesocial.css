@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+img {
+    width: 100vw;
+}
+a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkred;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 0.4em;
+    border-radius: 10px 10px 2px 2px;
+}
+
+a:hover {
+    background-color: rgb(172, 25, 25);
+    border: 1px solid rgba(255, 255, 255, 0.699);
+}

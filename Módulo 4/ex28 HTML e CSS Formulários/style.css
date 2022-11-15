@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(255, 255, 240);
+    margin: 2em;
+    text-indent: 1em;
+    font-size: 18px;
+}
+h1.titulo {
+    background-color: rgb(40, 42, 58);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0px 5px 0px;
+}
+
+h2.subtitulo {
+    display: inline-block;
+    background-color: rgb(123, 120, 141);
+    color: rgb(236, 239, 247);
+    padding: 5px 18px 5px 0px;
+    border-radius: 10pt 10pt 10pt 0pt;
+    margin: 0;
+}
+
+strong {
+    color: blueviolet;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        input {
+            margin: 5px 0px;
+        }
+
+        input.enviar {
+            margin-left: 1.3em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo">Formulário</h1>
+    <h2 class="subtitulo"> Como Fazer</h2>
+    <h3>Sem Label</h3>
+    <p>Todo formulário deve estar dentro das tags <strong>form</strong></p>
+
+    <form action="cadastro.php">
+        <p>Nome: <input type="text" name="nome" id="nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar" id="enviar"></p>
+    </form>
+
+    <h3>Usando Label</h3>
+    <p>O campo de informação deve estar veinculado ao input para uma semantica melhor, para que isso aconteça usamos um <strong>label</strong>. Dentro da tag label, o parametro <strong>for=""</strong> pede para quem/ ou qual input ele está se referindo. Deve se colocar o nome dado ao input. Desta forma, o texto terá uma relação direta ao input referente a ele.</p>
+    <h3>Métodos GET e POST</h3>
+    <p>Porta padrão, o param <strong>method</strong> já vem com <strong>GET</strong> onde o local dos dados fica visível na url. Para esconder essa informação, colocaremos o <strong>POST</strong></p>
+    <form  action="cadastro.php" method="post">
+        <div>
+            <label for="i_name">Nome</label>
+            <input type="text" name="name" id="i_name">
+        </div>
+
+        <div>
+            <label for="i_sobname">Sobrenome</label>
+            <input type="text" name="sobname" id="i_sobname">
+        </div>
+
+        <input type="submit" value="Enviar" class="enviar">
+    </form>
+
+    <h3>Envios de Formulários Vazios</h3>
+    <p>Os campos de nome de usuário e senha sempre são obrigatorios e não podem ser enciados caso nenhuma infromação seja dada. Para que um formulário vazio nao seja enviado, usaermos o parametro <strong>required</strong> na tag de <strong>input</strong> assim tornando ela um campo obrigatório</p>
+    <h3>Min e Max de caracteres</h3>
+    <p>Podemos definir uma quantidade mínima e máxima de caracteres nos inputs com o parametro <strong>minlenth</strong> e <strong>maxlenth</strong>. Feito isto, se o usário digitar uma quantidade inferiro de caractere, uma caixa de diálogo parecerá alertando, e se o usuário tentar digitar um quantidade a mais que o max definido não irá conseguir</p>
+    <h3>Placeholder</h3>
+    <p>Podemos também colocar um <strong>placeholder</strong>, um texto de dica que ficará visivel dentro da caixa somente enquanto nada for digitado.</p>
+
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="i_user">Nome</label>
+            <input type="text" name="user" required id="i_user" placeholder="Nome, Nickname ou Email">
+        </div>
+        
+        <div>
+            <label for="i_senha">Senha</label>
+            <input type="password" name="senha" required minlength="5" maxlength="10" id="i_senha" placeholder="Min 5, Max 10 Caracteres">
+        </div>
+
+        <input type="submit" value="Entrar" class="enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <h3>Tipos de Input</h3>
+    <h4><strong>fieldset</strong> e <strong>legend</strong></h4>
+    <p>Envelopando os inputs comum <strong>fieldset</strong> podemos agrupar tudo em um campo com bordas padrão. Usando a tag <strong>legend</strong> é possível criar uma legenda.</p>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="i_nome">Nome</label>
+                <input type="text" name="nome" id="i_nome" required minlength="6" maxlength="20" placeholder="Nome e Sobrenome">
+            </div>
+            <div>
+                <label for="i_idade">Idade</label>
+                <input type="number" name="idade" id="i_idade" required min="18" max="100" placeholder="18+">
+            </div>
+            <div>
+                <label for="i_data">Data</label>
+                <input type="month" name="data" id="i_data">
+            </div>
+            <div>
+                <label for="i_nota">Nota</label>
+                <input type="number" name="nota" id="i_nota" required min="0" max="10" step="0.5" placeholder="de 0 a 10">
+            </div>
+            <div>
+                <label for="i_email">Email</label>
+                <input type="email" name="email" id="i_email" required minlength="12">
+            </div>
+        </fieldset>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <h3>Input <strong>checkbox</strong></h3>
+
+    <fieldset>
+        <legend>Filmes Favoritos</legend>
+        <form action="" method="get">
+            <br>
+            <input type="checkbox" name="interestelar" id="interestelar">
+            <label for="interestelar"> Interrestelar</label>
+            <br>
+            <input type="checkbox" name="abruxa" id="abruxa">
+            <label for="abruxa">A Bruxa</label>
+        </form>
+    </fieldset>
+    <h3>Input <strong>radio</strong></h3>
+    <p>Veja que fazendo da forma como os anteriores foram feito há um erro de marcação.</p>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="masc" id="i_masc">
+        <label for="i_masc">Massculino</label>
+        <input type="radio" name="fem" id="i_fem">
+        <label for="i_fem">Feminino</label>
+    </fieldset>
+    <p>Isto ocorre, no tipo <strong>radio</strong>, pois todos os inputs do mesmo grupo devem ter o mesmo nome em <strong>name=""</strong>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sex" id="masc" checked>
+        <label for="masc">Massculino</label>
+        <input type="radio" name="sex" id="fem">
+        <label for="fem">Feminino</label>
+        <input type="radio" name="sex" id="transformer">
+        <label for="transformer">Transformer</label>
+    </fieldset>
+    
+
+    
+</body>
+</html>
