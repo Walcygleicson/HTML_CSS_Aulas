@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Features</title>
+
+    <link rel="stylesheet" href="estilos/global.css" media="all">
+
+    <!--Orientações-->
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and ()orientation: landscape">
+    <!--Orientações-->
+
+</head>
+<body>
+    <header>
+        <h1>Media Query</h1>
+        <menu>
+            <ul>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Tecnologia</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Media Features</h2>
+            <p>Crie um novo link de estilo css e use o <i>media="all"</i>. As configurações feitas deste arquivo valerão para todos os tipos de mídias. Feito isto, cria mais dois arquivos com media screen, destinados a orientação das telas. Um para a tela em retrato, outro para a tela em paisagem. Agora para adiconar as Medias Features, ainda dentro do parametro media, após o screen, deve-se escrever <i>and (orientation: portrait)</i></p>
+            <p>Assim: <i>media="screen and (orientation: portrait)"</i></p>
+            <p>Esta configuração é para a orientação da tela em modo retrato. Para o modo paisagem escreva <i>landscape</i>.</p>
+            <p>Assim: <i>media="screen and (orientation: landscape)"</i></p>
+        </article>
+
+        <p id="link">Voltar ao conteúdo >> <a href="media_type.html">Media Type</a></p>
+    </main>
+</body>
+</html>

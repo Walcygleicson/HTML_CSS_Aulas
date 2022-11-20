@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+    <style>
+        div {
+            margin-bottom: 5px;
+        }
+
+        body {
+            margin: 1em;
+            font-size: 18px;
+        }
+        i {
+            color: blueviolet;
+            font-weight: bold;
+        }
+        i.code {
+            color: rgb(100, 15, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1> Output</h1>
+    <p>A tag <i>output</i> é usada para mostrar a saída de algo que acontece no html, como por exemplo, uma soma entre dois valores. Para isto, na tag input, usando o parametro <i>oninput</i> é possível fazer este calculo e mostrar no output. O calculo é escrito em <i>JavaScript</i>, desta forma: <br> <i class="code">soma.innerHTML = Number(num1.value) + Number(num2.value)</i></p>
+    <p>Isto é, o html que está dentro do name soma, que neste caso é o output, vai receber e mostrar a soma do valor de cada inout convertido em número.</p>
+    <p>Obs: O valor do calculo não será enviado, pois o output serve somente para mostrar o calculo.</p>
+
+    <fieldset>
+        <form action="">
+            <div>
+                <label for="num1">Primeiro Número</label>
+                <input type="number" name="num1" id="num1" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </div>
+            <div>
+                <label for="num2">Segundo Número</label>
+                <input type="number" name="num2" id="num2" required oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+            </div>
+            <div>
+                <label for="soma">Soma</label>
+                <output name="soma" id="soma">0</output>
+            </div>
+            <div>
+                <input type="submit" value="Pronto">
+            </div>
+        </form>
+    </fieldset>
+    <p>Output com Input do tipo Range. Da mesma forma:</p>
+    <fieldset>
+        <form action="">
+            <input type="submit">
+            <label for="irange">Deslize</label>
+            <input type="range" name="range" id="irange" min="0" max="10" value="0" oninput="valor.innerHTML = Number(irange.value)">
+
+            <label for="valor">Valor: </label>
+            <output id="valor">0</output>
+        </form>
+    </fieldset>
+
+    <p>Outro exemplo:</p>
+    <fieldset>
+        <form action="">
+            <label for="iano">Ano de Nascimento</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2022" oninput="idade.innerHTML = Number(2022) - Number(iano.value)">
+            <label for="idade">Sua idade é </label>
+            <output id="idade">___</output>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

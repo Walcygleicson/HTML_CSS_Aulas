@@ -136,6 +136,69 @@
         <input type="radio" name="sex" id="transformer">
         <label for="transformer">Transformer</label>
     </fieldset>
+
+    <h3>Input <strong>color</strong></h3>
+
+    <fieldset>
+        <legend>Cores</legend>
+        <label for="cor">Cor</label>
+        <input type="color" name="cor" id="cor" value="#ff0000">
+    </fieldset>
+
+    <h3>Select, Datalist e Textarea</h3>
+    <h4>Select</h4>
+    <p>Usando a tag <strong>select</strong> se cria uma cortinha de seleção. Para adicionar as informações dentro, use a tag <strong>option</strong>, coloque um valor e escrevo o texto que deseja que apareça como opção.</p>
+    <p>Podemos também agrupar as infromações em grupos, envelopando-os com a tag <strong>optgroup</strong> e usando um <strong>label</strong> como parametro.</p>
+    <form action="">
+        <fieldset>
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <optgroup label="Região Sudeste">
+                    <option value="sp">São Paulo</option>
+                    <option value="pa">Pará</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="etc">Etc</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="pe">Pernambuco</option>
+                    <option value="bh">Bahia</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="etc">Etc</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Eviar">
+        </fieldset>
+    </form>
+
+    <h4>Datalist</h4>
+    <p>Como criar um input com cortina de selecção, mas que o usuário tambem tem a opção de digitar? Usando a tag <strong>datalist</strong>. Craremos um input normal, do tipo texto. Abaixo dele criaremos a tag <strong>datalist</strong> e dentro dele colocamos as <strong>opstion</strong></p>
+    <p>Para fazer com que as options da datalist apareça no input, daremos um id ao datalist e, dentro do input, colocarermos este nome em um parametro chamado <strong>list=""</strong></p>
+
+    <form action="">
+        <fieldset>
+            <label for="prof">Profissão</label>
+            <input type="text" name="prof" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="Soldador">Soldador</option>
+                <option value="Desenvolvedor">Desenvolvedor</option>
+                <option value="Médico">Médico</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Jornalista">Jornalista</option>
+                <option value="Agiota">Agiota</option>
+            </datalist>
+            <input type="submit" name="" id="">
+        </fieldset>
+    </form>
+
+    <h4>Textarea</h4>
+    <form action="">
+        <label for="msg">Mensagem</label> <br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <input type="submit" name="" id="">
+    </form>
     
 
     
