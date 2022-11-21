@@ -1,1 +1,15 @@
 @charset "UTF-8";
+
+
+i {
+    color: crimson;
+}
+
+body {
+    background: url(../imagens/retrato.jpg) no-repeat;
+    background-size: cover;
+}
+
+article {
+    background-color: rgba(245, 245, 220, 0.822);
+}

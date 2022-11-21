@@ -1,0 +1,101 @@
+/*Config Gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: beige;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    margin: 2em;
+    text-indent: 1em;
+    text-align: justify;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.5em;
+}
+
+i {
+    color: chocolate;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 6px; 
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    background-color: rgb(34, 31, 31);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: chocolate;
+}
+
+article {
+    margin-bottom: 1em;
+    border: 1px solid rgb(196, 192, 192);
+    border-radius: 0px 10px 10px 10px;
+    padding: 1em;
+    box-shadow: 1px 1px 4px rgba(92, 91, 91, 0.466);
+}
+
+#link > a {
+    color:chocolate;
+}
+
+#link > a:hover {
+    color: blue;
+}
+
+/*Config Retrato*/
+
+@media screen and (orientation: portrait) {
+    i, #link > a {
+        color: blueviolet;
+    }
+
+    li > a:hover {
+        color: rgb(232, 210, 252);
+    }
+
+    #link > a:hover {
+        color: rgb(161, 13, 13);
+    }
+
+}
+
+/*Config Paisagem*/
+
+@media screen and (orientation: landscape){
+    i, #link > a {
+        color: rgb(226, 43, 67);
+    }
+
+    li > a:hover {
+        color: rgb(252, 210, 231);
+    }
+
+    #link > a:hover {
+        color: rgb(11, 107, 32);
+    }
+
+}

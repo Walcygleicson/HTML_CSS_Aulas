@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+
+i {
+    color: blueviolet;
+}
+body {
+    background: url(../imagens/paisagem.jpg) no-repeat;
+    background-size:cover;
+}
+
+article {
+    background-color: rgba(245, 245, 220, 0.822);
+}
