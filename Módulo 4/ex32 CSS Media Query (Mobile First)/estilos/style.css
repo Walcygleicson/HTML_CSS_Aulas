@@ -1,0 +1,53 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+div {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: black;
+}
+
+div::after {
+    content: 'Esta é uma tela própria para celulares e smartphones';
+}
+
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.678);
+    width: 90vw;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: 1.5em
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#pc {display: none;}
+#print {display: none;}
+#tv {display: none;}
+#tablet {display: none;}
+#phone {display: block;}
+
+img {
+    display: block;
+    margin: auto;
+}

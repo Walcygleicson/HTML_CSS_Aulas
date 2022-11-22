@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*Breakpoints para diferentes tamanho de telas
+Pequenas telas: até 600px
+Celular: 600px a 768px
+Tablet: 768px a 992px
+Desktop: 992 a 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 1px solid gray;
+    }
+
+    div::after {
+        content: 'Este é um modo de tela próprio para impressoras.';
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #print {display: block;}
+    #phone {display: none;}
+}
+
+
+@media screen and (min-width:650px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    div::after {
+        content: 'Esta é uma tela própria para tablets';
+    }
+
+    #tablet {display:block;}
+    #phone {display: none;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+    
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    div::after {
+        content: 'Esta é uma tela própria para desktop';
+    }
+
+    #pc {display: block;}
+    #tablet {display: none;}
+    #phone {display: none;}
+    #tv {display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    div::after {
+        content: 'Esta é uma tela própria para tvs ou telas maiores';
+    }
+
+    #pc {display: none;}
+    #tablet {display: none;}
+    #phone {display: none;}
+    #tv {display: block;}
+
+}
