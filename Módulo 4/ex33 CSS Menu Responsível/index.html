@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resposivel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="estilos/geral-style.css" media="all">
+    <link rel="stylesheet" href="estilos/medias-style.css">
+</head>
+<body onresize="desktop()">
+
+    <header>
+        <h1>Menu Responsivo</h1>
+       <div id="menu-bar"><span class="material-symbols-outlined" onclick="clickMenu()">menu</span></div>
+        <menu id="tela_menu">
+            <ul>
+                <li id="top"><a href="#">Categorias</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre o Site</a></li>
+                <li id="bottom"><a href="#">Ajuda</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Como Fazer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laborum molestiae nihil quaerat! Id officiis rerum odit similique delectus nostrum commodi inventore. Temporibus quo sed voluptatum non eius quae at?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, velit doloribus dolor magnam possimus rem praesentium, iure molestiae dolores quod sit? Aperiam doloremque nobis quo voluptas minima totam ipsam aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda iure iusto perferendis natus sapiente quis esse illo libero illum quas rem suscipit, accusantium reprehenderit beatae rerum? Dolores dolore eveniet dolorum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio aperiam error esse animi quos iure dolorum doloribus repellendus culpa magni tempore aut asperiores, saepe, dicta dignissimos eveniet, quisquam quasi.</p>
+
+            <h2>Exemplo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, officia omnis? Vitae eligendi beatae incidunt rem quod similique tempore quidem porro illo nam delectus, iste nemo eos quam, assumenda repudiandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis harum sequi placeat ullam neque numquam. Dicta libero quibusdam voluptatem rem. Id culpa dolorem asperiores, mollitia eos minima nam suscipit sint.</p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur, optio quia officiis dolores quidem dolor labore totam odit dolore eveniet veniam quae dolorum delectus, iusto provident vero, incidunt libero.
+
+        </article>
+    </main>
+        <script>
+
+            function desktop() {
+                if (window.innerWidth >= 600) {
+                tela_menu.style.display = 'block'
+            }
+
+            else {
+                tela_menu.style.display = 'none'
+            }
+            }
+            
+            function clickMenu() {
+                if (tela_menu.style.display == 'block') {
+                    tela_menu.style.display = 'none'
+                }
+
+                else {
+                    tela_menu.style.display = 'block'
+                }
+                
+            }
+        </script>
+</body>
+</html>
